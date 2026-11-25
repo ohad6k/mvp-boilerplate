@@ -26,7 +26,8 @@
     "supabase:generate-seed": "npx supabase db dump --data-only -f supabase/seed.sql",
     "supabase:push": "npx supabase push",
     "supabase:deploy-functions": "cd .. && npx supabase secrets set SENTRY_RELEASE=$(git rev-parse HEAD) && npx supabase functions deploy",
-    "supabase:pull": "npx supabase pull"
+    "supabase:pull": "npx supabase pull",
+    "check:access": "npx -y viberaven@latest check ../supabase/migrations --quiet"
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^2.2.0",

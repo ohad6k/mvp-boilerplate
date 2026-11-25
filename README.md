@@ -72,3 +72,5 @@
 - Unhandled errors from React rendering, Server Components, and route handlers are reported automatically, and the auth proxy and edge functions report the errors they catch
 - Disabled until a DSN is set (`NEXT_PUBLIC_SENTRY_DSN` for Next.js, `SENTRY_DSN` for edge functions and Flutter), so local development stays quiet by default
 
+
+Run `cd nextjs && npm run check:access` to scan the Supabase migrations with VibeRaven.
